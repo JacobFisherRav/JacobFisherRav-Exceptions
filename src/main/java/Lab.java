@@ -1,3 +1,5 @@
+import kotlin.jvm.Throws;
+
 public class Lab {
     /**
      * An exception is an unexpected event that occurs during our program.
@@ -19,8 +21,9 @@ public class Lab {
      * a method thrown to it. A try/catch block would handle the exception within the method.
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
+     * @throws Exception
      */
-    public void mustThrow() {
-
+    public void mustThrow() throws Exception {
+        throw new Exception();
     }
 }
